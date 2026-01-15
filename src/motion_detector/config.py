@@ -25,9 +25,9 @@ class Config:
     EMAIL_ENABLED: bool = os.getenv("EMAIL_ENABLED", "true").lower() == "true"
     SMTP_SERVER: str = os.getenv("SMTP_SERVER", "smtp.gmail.com")
     SMTP_PORT: int = int(os.getenv("SMTP_PORT", "587"))
-    EMAIL_FROM: str = os.getenv("EMAIL_FROM", "alexhtripp@gmail.com")
-    EMAIL_TO: str = os.getenv("EMAIL_TO", "aht23490@ucmo.edu")
-    EMAIL_PASSWORD: str = os.getenv("EMAIL_PASSWORD", "txqb ktqk wlfs afqi")
+    EMAIL_FROM: str = os.getenv("EMAIL_FROM", "")
+    EMAIL_TO: str = os.getenv("EMAIL_TO", "")
+    EMAIL_PASSWORD: str = os.getenv("EMAIL_PASSWORD", "")
 
     # Cooldown settings (prevent spam)
     NOTIFICATION_COOLDOWN_SECONDS: int = int(os.getenv("NOTIFICATION_COOLDOWN_SECONDS", "60"))
